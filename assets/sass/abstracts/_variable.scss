@@ -1,0 +1,67 @@
+// ==== COLOR =====
+$color-blue:#3dbbda;
+$color-blue-light:#f1f5fd;
+
+$color-purple:#7597d7;
+$color-white:#fff;
+$color-gray-light:#d8e5df;
+$color-black:#000;
+$color-black-light:#342f36;
+$color-red:#ef3062;
+$color-orange:#ff6200;
+$color-yellow:#feb404;
+$color-yellow-bold:#dedd7d;
+$color-green:#23D513;
+$color-gray:#4a5568;
+
+$color-text-link:#fc8726;
+$color-text-paragraph:#000;
+$color-text-hint:#afafaf;
+$color-text-menu:#fff;
+
+
+
+$color-item-menu-hover:rgba(12, 134, 198, 0.2);
+$color-item-text-menu-hover:#000;
+
+
+
+// ==== BORDER ====
+$border-dark:#2e384b;
+$border-none:none;
+$border-light:#d0e5f9;
+
+
+// ==== FONT ====
+$font-weight-bold:bold;
+$font-weight-500:500;
+
+
+
+//=== PADDING ===
+$padding-box-default:10px;
+$padding-box-left-right:10px;
+
+
+// === SIZE ====
+$font-size-smaller:14px;
+$font-size-small:17px;
+$font-size-medium:22px;
+$font-size-large:35px;
+$font-size-huge:45px;
+$font-size-huger:55px;
+$font-size-hugest:70px;
+
+
+$overlay_dark: rgba(0, 0, 0, .6); // color of overlay background
+$overlay_dark_fallback: #333; // for IE 8 & non-tranparent
+$overlay_dark_dark: #111;
+
+$overlay_colored: rgba(26, 74, 114, .6); // color of colored overlay background
+$overlay_colored_fallback: #1a4a72; // for IE 8 & non-tranparent
+$overlay_colored_dark: darken($overlay_colored, 15%);
+
+
+
+// === RADIUS ====
+$radius:12px;

@@ -1,0 +1,81 @@
+.navbar-light {
+    .navbar-toggler {
+
+        @include border(none,none);
+        %outline {
+            outline: 0;
+        }
+
+        &:focus {
+            @extend %outline;
+        }
+
+        &:active {
+            @extend %outline;
+        }
+
+        span {
+            display: block !important;
+            background-color: #444;
+            height: 3px;
+            width: 25px;
+            @include margin-vertical(4px, 4px);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            position: relative;
+            right: 0;
+            opacity: 1;
+            transition: .35s ease;
+
+            %nth-child {
+                -webkit-transition: transform .35s ease-in-out;
+                -moz-transition: transform .35s ease-in-out;
+                -o-transition: transform .35s ease-in-out;
+                transition: transform .35s ease-in-out;
+            }
+
+            &:nth-child(1) {
+                @extend %nth-child;
+            }
+
+            &:nth-child(3) {
+                @extend %nth-child;
+            }
+
+        }
+
+        &:not(.collapsed) {
+            span {
+                &:nth-child(1) {
+                    position: absolute;
+                    right: 30px;
+                    top:25px;
+                    -webkit-transform: rotate(135deg);
+                    -moz-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    opacity: 0.9;
+                }
+
+                &:nth-child(2) {
+                    height: 12px;
+                    visibility: hidden;
+                    background-color: transparent;
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    right: 30px;
+                    top:25px;
+                    -webkit-transform: rotate(-135deg);
+                    -moz-transform: rotate(-135deg);
+                    -o-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

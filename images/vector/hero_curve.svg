@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="680px" viewBox="0 0 1440 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.36906328%" y1="41.6572852%" x2="52.0487942%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#6A38E1" offset="0%"></stop>
+            <stop stop-color="#4513BB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,0 L1440,0 L1440,460 C1244.64087,640.00106 1004.64087,700.434393 720,641.3 C435.359129,582.165607 195.359129,595.065607 0,680 L0,0 Z" id="path-2"></path>
+        <linearGradient x1="-1.36906328%" y1="23.3211408%" x2="52.0487942%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#6A38E1" offset="0%"></stop>
+            <stop stop-color="#4513BB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.36906328%" y1="23.1878948%" x2="52.0487942%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#6A38E1" offset="0%"></stop>
+            <stop stop-color="#4513BB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.36906328%" y1="23.3008267%" x2="52.0487942%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#6A38E1" offset="0%"></stop>
+            <stop stop-color="#4513BB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.36906328%" y1="23.3431389%" x2="52.0487942%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#6A38E1" offset="0%"></stop>
+            <stop stop-color="#4513BB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home_curve">
+            <g id="Curve">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="shape" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="curves" mask="url(#mask-3)">
+                    <g transform="translate(-1146.000000, -1212.000000)" id="Path">
+                        <g>
+                            <path d="M1771.72024,2328.92627 C1609.24054,1988.93215 1701.59066,1764.20999 2048.77059,1654.7598 C2395.95052,1545.3096 2594.21939,1313.87657 2643.57721,960.460696 L3453.5376,1043.75924 L3309.69451,2247.60726 L2964.68848,2446.29159 L1940.26242,2415.65563 L1771.72024,2328.92627 Z" id="Path-2-Copy" fill="url(#linearGradient-4)" transform="translate(2573.779974, 1703.376142) rotate(-345.000000) translate(-2573.779974, -1703.376142) "></path>
+                            <path d="M2019.0699,2137.81145 C1902.10502,1892.58237 1968.51678,1730.52888 2218.30516,1651.65099 C2468.09354,1572.7731 2610.71591,1405.89719 2646.17227,1151.02326 L3228.97674,1211.23111 L3125.67514,2079.41763 L2877.46561,2222.65116 L2140.35531,2200.38805 L2019.0699,2137.81145 Z" id="Path-2" fill="url(#linearGradient-5)"></path>
+                            <path d="M327.595664,2032.40488 C120.276964,1598.65594 237.990915,1312.02384 680.73752,1172.50857 C1123.48412,1032.9933 1376.28039,737.831527 1439.12631,287.023256 L2472.13953,393.515904 L2289.03881,1929.1208 L1849.09069,2182.46512 L542.572435,2143.08723 L327.595664,2032.40488 Z" id="Path-2-Copy-6" fill="url(#linearGradient-6)" transform="translate(1350.279070, 1234.744186) rotate(-197.000000) translate(-1350.279070, -1234.744186) "></path>
+                            <path d="M373.256742,1656.19188 C210.49609,1315.93653 302.910327,1091.08732 650.499452,981.644242 C998.088578,872.201169 1196.55251,640.66084 1245.89125,287.023256 L2056.88372,370.561658 L1913.13599,1575.17045 L1567.74388,1773.90698 L542.02955,1743.01691 L373.256742,1656.19188 Z" id="Path-2-Copy-2" fill="url(#linearGradient-7)" opacity="0.709100632" transform="translate(1176.139535, 1030.465116) rotate(-180.000000) translate(-1176.139535, -1030.465116) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

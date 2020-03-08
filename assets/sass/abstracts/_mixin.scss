@@ -1,0 +1,122 @@
+// Font-google
+@mixin font-google($font...) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+
+
+// === PADDING/MARGIN MINXIN ===
+@mixin padding-horizontal($left, $right) {
+    padding: 0 $right 0 $left;
+}
+
+@mixin padding-vertical($top, $bottom) {
+    padding: $top 0 $bottom 0;
+}
+
+@mixin margin-horizontal($left, $right) {
+    margin: 0 $right 0 $left;
+}
+
+@mixin margin-vertical($top, $bottom) {
+    margin: $top 0 $bottom 0;
+}
+
+@mixin margin-custom($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin padding-custom($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin padding-default($size) {
+    padding: $size;
+}
+
+@mixin margin-default($size) {
+    margin: $size;
+}
+
+// === BORDER ====
+@mixin border($type, $border...) {
+    @if ($type==top) {
+        border-top: $border;
+    }
+
+    @else if($type==left) {
+        border-left: $border;
+    }
+
+    @else if($type==bottom) {
+        border-bottom: $border;
+    }
+
+    @else if($type==right) {
+        border-right: $border;
+    }
+
+    @else {
+        border: $border;
+    }
+}
+
+@mixin border-radius($arg...) {
+    border-radius: $arg;
+}
+
+@mixin box-shadow($color...) {
+    -webkit-box-shadow: 10px 10px 67px -30px $color;
+    -moz-box-shadow: 10px 10px 67px -30px $color;
+    box-shadow: 10px 10px 67px -30px $color;
+    @content;
+}
+@mixin box-shadow2($color...){
+    -webkit-box-shadow: 3px 9px 43px -5px $color;
+    -moz-box-shadow: 3px 9px 43px -5px $color;
+    box-shadow: 3px 9px 43px -5px $color;
+}
+
+
+
+//=== ALIGN ===
+@mixin text-align($type) {
+    @if($type==left) {
+        text-align: left;
+    }
+
+    @else if($type==center) {
+        text-align: center;
+    }
+
+    @else if($type==right) {
+        text-align: right;
+    }
+}
+
+
+//==== BACKGROUND ====
+@mixin background-parallax($url) {
+    background-image: url($url);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+// === DISPLAY ====
+@mixin display($type) {
+    display: $type;
+}
+
+// === BOX ====
+@mixin box {
+    height: 600px;
+    @content;
+}
+
+
+
+// === ANIMATION ===

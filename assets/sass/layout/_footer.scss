@@ -1,0 +1,112 @@
+.footer-page {
+    padding: 10px;
+    background-color: var(--Color-Primary-Blue);
+}
+
+.text-footer {
+    color: #fff;
+
+    &::before {
+        content: '\00a9';
+    }
+}
+
+/*=-footer-=*/
+
+footer {
+    @include padding-vertical(20px,0px);
+    color: #fff;
+    background-attachment: fixed;
+    background-image: url('/images/vector/star.png');
+    background-color: $color-black;
+    background-size: cover;
+    background-position: bottom;
+
+    p,
+    a {
+        color: #ccc;
+    }
+}
+
+.social-pet li {
+    display: inline-block;
+    margin-right: 10px;
+
+    a {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+        background-color: #3a5a95;
+        color: #fff;
+    }
+
+    &:nth-child(2) a {
+        background-color: #57aced;
+    }
+
+    &:nth-child(3) a {
+        background-color: #dd4f43;
+    }
+
+    &:nth-child(4) a {
+        background-color: #6b27b2;
+    }
+
+    a:hover {
+        background-color: #0141a2;
+
+        i {
+            transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+    }
+}
+
+.recent-post li {
+    display: block;
+    color: #ccc;
+    margin-bottom: 25px;
+
+    label {
+        float: left;
+        border: 2px solid #ccc;
+        padding: 1px 7px;
+        text-align: center;
+
+        span {
+            color: #fff;
+        }
+    }
+}
+
+footer  {
+    .input-group-addon{
+        background-color: #0141a2;
+        padding: 10px 10px 0;
+    }
+}
+
+.f-address li {
+    display: inline-block;
+
+    i {
+        color: #2995de;
+        font-size: 18px;
+    }
+
+    a {
+        color: #ccc;
+    }
+}
+
+/*=-Copyright-=*/
+
+.copyright {
+    background-color: #111;
+    padding: 12px 0;
+    font-size: 14px;
+}

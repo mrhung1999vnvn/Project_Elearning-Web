@@ -1,0 +1,107 @@
+.button{
+    width: 120px;
+    height: 50px;
+    @include padding-default(10px);
+    font-weight: 300;
+    border-radius: $radius;
+    transition: .3s ease;
+    &:hover{
+        color:$color-white;
+    }
+}
+
+.button-default{
+    background-color: transparent;
+    color: $color-blue;
+    font-size: $font-size-small;
+    @include border(full,2px solid $color-blue);
+    &:hover{
+        background: $color-blue;
+    }
+}
+
+.button-blue{
+    background-color: rgba(0,255,255,0.7);
+    color:$color-white;
+    &:hover{
+        background: rgba(0,255,255,0.9);
+    }
+}
+.button-black{
+    background-color: rgba(34,34,34,0.6);
+    color:$color-white;
+    &:hover{
+        background: rgba(34,34,34,0.4);
+    }
+}
+
+.button-orange{
+    background-color: rgba(253,185,155,0.6);
+    color:$color-white;
+    &:hover{
+        background: rgba(253,185,155,0.8);
+    }
+}
+
+
+.button-red{
+    background-color: rgba(255,0,0,0.4);
+    color:$color-white;
+    &:hover{
+        background-color: rgba(255,0,0,0.6);
+    }
+}
+
+.button-yellow{
+    background-color: rgba(222,221,125,1);
+    color:$color-white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+    &:hover{
+        background: rgba(254,180,4,0.9);
+    }
+}
+
+.button-purple{
+    background-color: rgba(88,95,163,0.7);
+    color:$color-white;
+    &:hover{
+        background: rgba(88,95,163,0.9);
+    }
+    
+}
+
+
+// Button to top
+.arrow-to-top {
+    background: rgba(48,205,227,0.8);
+    @include padding-default(16px);
+    font-size: $font-size-medium;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    @include border-radius(15px);
+    cursor: pointer;
+    @include box-shadow2(rgba(48,205,227,1));
+    z-index: 999;
+    display: none;
+    color: #fff;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+
+.button-arrow-up{
+    background-color: $color-black;
+    color: $color-white;
+    cursor: pointer;
+    @include padding-default(10px);
+    border-radius: 50%;
+    @include media(">=desktop-x2"){
+        @include padding-default(20px);
+        font-size: $font-size-large;
+
+    }
+}

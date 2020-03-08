@@ -1,0 +1,49 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/include-media/dist/include-media";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/hover.css/scss/hover.scss";
+@import "../../node_modules/aos/src/sass/aos.scss";
+
+
+
+// Bower
+@import "../../bower_components/ihover/client/styles/ihover.scss";
+
+
+@import 'abstracts/function';
+@import 'abstracts/variable';
+@import 'abstracts/mixin';
+
+
+@import 'vendors/bootstrap';
+@import 'vendors/jquery';
+@import 'vendors/hover';
+@import 'vendors/swiper';
+
+
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/form';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+
+@import 'components/button-menu';
+@import 'components/button';
+@import 'components/grid';
+@import 'components/image';
+@import 'components/section';
+@import 'components/navbar-toggler';
+@import 'components/circle-hover';
+@import 'components/paragraph';
+@import 'components/heading';
+@import 'components/barfixed';
+
+
+
+@import 'pages/home';
+@import 'pages/products';
+@import 'pages/bill';
+
+// @import 'themes/';

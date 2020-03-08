@@ -1,0 +1,210 @@
+// body {}
+@include font-google('Montserrat:400,800');
+html{
+    scroll-behavior: smooth;
+}
+
+// Nội dung trang
+#_content {
+    overflow: hidden;
+    height: 100%;
+    background-image: url('/images/vector/background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    .content {
+        article:nth-child(1) {
+            @include box{
+                height: auto;
+            };
+            @include media(">=phone", "<tablet") {
+                background-size: contain;
+            }
+
+            .title-logo {
+                .break-responsive {
+                    display: none;
+
+                    @include media(">=phone", "<tablet") {
+                        display: inline;
+                    }
+                }
+
+                font-size: $font-size-huger;
+                font-weight: $font-weight-bold;
+                color:$color-gray;
+
+                @include media(">=phone", "<tablet") {
+                    font-size: $font-size-large;
+                }
+
+                @include media(">desktop-x1") {
+                    font-size: $font-size-hugest;
+                }
+            }
+
+            .paragraph-logo {
+                line-height: 1.6;
+
+                @include media(">desktop-x1") {
+                    font-size: $font-size-large;
+                    font-weight: 200;
+                }
+            }
+
+            .list-product-features {
+                @include padding-horizontal(30px, 10px);
+
+                @include media(">=phone", "<desktop-x1") {
+                    display: none;
+                }
+            }
+        }
+
+        article:nth-child(2) {
+            @include border(bottom, 3px dashed $color-gray-light);
+
+            .section {
+                @include box;
+                @include padding-vertical(60px, 0);
+
+                .content-service {
+                    @include padding-default(20px);
+                    @include box-shadow($color-black);
+                    @include border-radius(12px);
+                    background: rgba(255, 255, 255, 1);
+                    font-size: $font-size-small;
+
+                    @include media(">=phone", "<=tablet") {
+                        text-align: center;
+                    }
+                }
+
+                .poster-design {
+                    background-color: #a770ef;
+                    color: $color-white;
+                }
+
+                .advers-design {
+                    background-color: $color-black;
+                    color: $color-yellow;
+                }
+            }
+        }
+
+        // /Danh muc cac san pham
+        article:nth-child(3) {
+            background-color: $color-blue-light;
+            @include border(bottom, 3px dashed $color-gray-light);
+
+            .products-container-not-reponsive {
+                .swiper-wrapper {
+                    .item {
+                        .image-product {
+                            // Hinh anh san pham trang chu
+                            background-color: $color-red;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            border-radius: $radius;
+                            height: 150px;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                @include media(">=phone", "<=tablet") {
+                    display: none;
+                }
+            }
+
+
+            .products-container-reponsive {
+                display: none;
+                @include media(">=phone", "<=tablet") {
+                    display: block;
+                }
+                .swiper-wrapper {
+                    .item {
+                        .image-product {
+                            // Hinh anh san pham trang chu
+                            background-color: $color-red;
+                            // background-size: contain;
+                            // background-repeat: no-repeat;
+                            border-radius: $radius;
+                            height: 150px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        article:nth-child(4) {
+            .contact-form {
+                border-radius: $radius;
+                @include border(right, 20px solid #585fa3);
+                @include box-shadow($color-black);
+                height:300px;
+                @include media(">=phone","<=tablet"){
+                    height:auto;
+                }
+                label {
+                    color: $color-gray;
+                    text-emphasis: initial;
+                }
+            }
+
+            .image-contact-form {
+                .image-vector-contact {
+                    background-image: url('/images/vector/kalvey-work-with-us-min-scaled.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// === other ===
+// people vector
+.image-logo {
+    background-image: url('/images/vector/people.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    height: 400px;
+    width: 400px;
+
+    @include media(">=phone", "<tablet") {
+        height: 170px;
+        width: 170px;
+        top: 430px;
+        left: 20px;
+        z-index: -1;
+    }
+
+    @include media(">desktop-x1") {
+        top: 400px;
+        left: 530px;
+        height: 450px;
+        width: 450px;
+    }
+}
+
+.logo {
+    font-family: 'Montserrat', ;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    @include border(bottom, 2px dotted $color-blue);
+
+    @include media(">desktop-x1") {
+        font-size: $font-size-huger;
+    }
+}

@@ -1,0 +1,99 @@
+#_header {
+    .header-top {
+        background-color: $color-black;
+        color: $color-white;
+        @include padding-default(20px);
+
+        .text-phone {
+            @include border(right, 1px solid $color-white);
+        }
+    }
+
+    .header-bottom {
+        .navbar-nav {
+            .nav-item {
+                @include margin-horizontal(20px, 20px);
+                @include padding-default(10px);
+                a {
+                    font-weight: $font-weight-500;
+                    text-transform: uppercase;
+                    font-size: $font-size-small;
+                }
+            }
+            
+        }
+    }
+}
+
+// Custom menu dropdown
+.menu-animation {
+    @include display(none);
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(246, 246, 246, 0.8);
+    z-index: 1;
+    @include border-radius(150px 200px 350px 480px);
+    @include media(">=desktop","<desktop-x1"){
+        width: 600px;
+        height: 450px;
+        
+    }
+    @include media(">desktop-x2"){
+        width: 1200px;
+        height: 900px;
+        @include border-radius(250px 200px 450px 780px);
+    }
+    ul {
+        li {
+            &:not(.header-menu) {
+                &::before {
+                    transition: 0.3s ease;
+                    content: "\2756";
+                    padding: 2px;
+                }
+            }
+            list-style-type: none;
+            font-size: $font-size-small;
+            @include media(">desktop-x2"){
+                font-size: $font-size-large - 6;
+            }
+        }
+
+        .header-menu {
+            color: $color-black;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
+            @include media(">=desktop","<desktop-x1"){
+                font-size: $font-size-small;
+            }
+            @include media(">desktop-x2"){
+                font-size: $font-size-large;
+                @include margin-vertical(0,30px);
+            }
+        }
+
+        $arr:($color-red,#a770ef,$color-yellow);
+        $i:1;
+        @each $val in $arr {
+            .header-#{$i}{
+                background-color: $val;
+                border-radius: $radius;
+                @include padding-default(5px);
+                text-align: center;
+                color:$color-white;
+            }
+            $i : $i +1;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+
+    &:hover {
+        text-decoration: none;
+        color: $color-black;
+    }
+}

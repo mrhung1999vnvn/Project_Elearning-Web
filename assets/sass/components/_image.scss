@@ -1,0 +1,47 @@
+
+
+// Vector dịch vụ
+.image-website-service{
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
+.image-section1-1{
+    background-image: url('/images/vector/web.png');
+    width: 100%;
+    height: 400px;
+}
+.image-section1-2{
+    background-image: url('/images/vector/red_triangle.png');
+    width: 100%;
+    height:100px;
+    left:400px;
+    top:70px;
+    @include media(">=phone","<=tablet"){
+        display: none;
+    }
+}
+.image-section2-1{
+    background-image: url('/images/vector/poster.png');
+    width: 100%;
+    height: 400px;
+    @include media(">=phone","<=tablet"){
+        top:-150px;
+        z-index: -1;
+    }
+}
+
+
+.image-section3-1{
+    background-image: url('/images/vector/qc.png');
+    width: 100%;
+    height: 400px;
+    @include media(">=phone","<=tablet"){
+        top:150px;
+    }
+}
+
+
+

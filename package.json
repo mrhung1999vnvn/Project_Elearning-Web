@@ -1,0 +1,25 @@
+{
+  "name": "project_thayloc3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/main.scss:assets/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.6"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^4.4.1",
+    "hover.css": "^2.3.2",
+    "include-media": "^1.4.9",
+    "swiper": "^5.3.1"
+  }
+}

@@ -1,0 +1,46 @@
+.barfixed-rightside{
+    width: 50px;
+    height: 150px;
+    position: fixed;
+    right: 10px;
+    bottom: 150px;
+    background-color: rgba(238,238,238,0.8);
+    @include box-shadow($color-black);
+    -webkit-box-shadow: -9px 17px 63px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: -9px 17px 63px -14px rgba(0,0,0,0.75);
+box-shadow: -9px 17px 63px -14px rgba(0,0,0,0.75);
+    z-index: 999;
+    @include border-radius(30px);
+    .item-fb{
+        background-image: url('/images/fb.png');
+        background-color: #0071bc;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s ease;
+        @include border-radius(30px 30px 0 0);
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .item-zalo{
+        background-image: url('/images/zalo.png');
+        background-color: #448aff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .item-phone{
+        background-image: url('/images/phone.jpg');
+        background-color: #ff6d24;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s ease;
+        @include border-radius(0px 0px 30px 30px);
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

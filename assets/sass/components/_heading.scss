@@ -1,0 +1,9 @@
+.header{
+    font-weight: $font-weight-bold;
+    font-size: 40px;
+}
+
+.header-light{
+    @extend .header;
+    color:$color-gray;
+}

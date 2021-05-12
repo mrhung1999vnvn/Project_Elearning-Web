@@ -20,6 +20,6 @@
     "bootstrap": "^4.4.1",
     "hover.css": "^2.3.2",
     "include-media": "^1.4.9",
-    "swiper": "^5.3.1"
+    "swiper": "^6.5.1"
   }
 }
